@@ -12,7 +12,7 @@ const JOBS = [
   {
     company: 'Southern Swing Golf',
     role: 'Software Engineer',
-    date: 'Aug 2025 — Present',
+    date: 'Aug 2025 — Dec 2025',
     desc: 'Built a full-stack tournament platform with a real-time scoring engine, live leaderboards, and role-based access for organizers and players. Stack is React, Node.js, and Supabase. The challenge was making something technically solid that felt genuinely fun to use on a phone at a golf course.',
   },
   {
