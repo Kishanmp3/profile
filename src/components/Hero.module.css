@@ -1,0 +1,94 @@
+.hero {
+  padding: calc(var(--nav-h) + 88px) var(--pad-x) 80px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+/* ── Name block ─────────────────────────────────────────── */
+.nameBlock {
+  opacity: 0;
+  transform: translateY(22px);
+  transition: opacity .85s ease, transform .85s ease;
+}
+.nameVisible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.nameFirst,
+.nameLast {
+  font-family: var(--sans);
+  font-size: clamp(68px, 12.5vw, 164px);
+  font-weight: 700;
+  line-height: .88;
+  letter-spacing: -.025em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+.nameFirst { color: var(--text); }
+.nameLast  { color: var(--accent); }
+
+/* ── Rules ──────────────────────────────────────────────── */
+.ruleTop {
+  width: 100%;
+  height: 1px;
+  background: rgba(143, 186, 128, 0.3);
+  margin: 36px 0 28px;
+}
+.ruleBottom {
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(
+    to right,
+    transparent,
+    rgba(143, 186, 128, 0.18) 25%,
+    rgba(143, 186, 128, 0.18) 75%,
+    transparent
+  );
+  margin-top: 56px;
+}
+
+/* ── Terminal lines ─────────────────────────────────────── */
+.terminal {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  opacity: 0;
+  transform: translateY(14px);
+  transition: opacity .65s ease .42s, transform .65s ease .42s;
+}
+.terminalVisible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.line {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  font-family: var(--mono);
+  font-size: 13px;
+  font-weight: 300;
+  color: var(--text-muted);
+  line-height: 2;
+}
+
+.prompt {
+  color: var(--accent);
+  font-size: 15px;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.cursor {
+  display: inline-block;
+  width: 8px;
+  height: 14px;
+  background: var(--accent);
+  vertical-align: middle;
+  margin-left: 2px;
+  animation: blink 1.1s step-end infinite;
+}
