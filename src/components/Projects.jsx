@@ -10,7 +10,7 @@ const PROJECTS = [
     name: 'Daimon',
     summary: 'A Go daemon that watches your files in real time, diffs changes without Git, and uses Claude AI to write you a plain-English summary of your coding session. Local dashboard, zero cloud, ships via a single curl command.',
     stack: ['Go', 'Claude API', 'React', 'SQLite', 'CLI'],
-    link: 'https://daimonai.netlify.app',
+    link: 'https://daimon-mu.vercel.app/',
     img: imgDaimon,
     flip: false,
   },
