@@ -1,0 +1,149 @@
+.section {
+  padding: 100px var(--pad-x) 100px;
+}
+
+.inner {
+  max-width: var(--max-w);
+  margin: 0 auto;
+}
+
+/* ── Section header ── */
+.header {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 56px;
+}
+
+.label {
+  font-family: var(--mono);
+  font-size: 9px;
+  letter-spacing: .48em;
+  color: var(--accent);
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.rule {
+  flex: 1;
+  height: 1px;
+  background: rgba(143, 186, 128, 0.18);
+}
+
+/* ── Card grid ── */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+}
+
+@media (max-width: 640px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ── Card ── */
+.card {
+  position: relative;
+  padding: 28px 28px 32px;
+  border: 1px solid rgba(143, 186, 128, 0.13);
+  background: rgba(143, 186, 128, 0.018);
+  overflow: hidden;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity .6s ease, transform .6s ease, border-color .25s, background .25s;
+}
+
+.card:hover {
+  border-color: rgba(143, 186, 128, 0.34);
+  background: rgba(143, 186, 128, 0.038);
+}
+
+.cardVisible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* decorative index number */
+.num {
+  position: absolute;
+  right: 22px;
+  bottom: 16px;
+  font-family: var(--mono);
+  font-size: 64px;
+  font-weight: 700;
+  color: rgba(143, 186, 128, 0.05);
+  line-height: 1;
+  pointer-events: none;
+  user-select: none;
+}
+
+/* ── Card top row ── */
+.cardTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.badge {
+  font-family: var(--mono);
+  font-size: 8.5px;
+  letter-spacing: .22em;
+  color: var(--accent);
+  text-transform: uppercase;
+  padding: 3px 9px;
+  border: 1px solid rgba(143, 186, 128, 0.28);
+}
+
+.date {
+  font-family: var(--mono);
+  font-size: 9px;
+  letter-spacing: .06em;
+  color: var(--text-muted);
+}
+
+/* ── Company name ── */
+.name {
+  font-family: var(--sans);
+  font-size: clamp(26px, 3vw, 38px);
+  font-weight: 600;
+  color: var(--text);
+  letter-spacing: -.015em;
+  line-height: 1.05;
+  margin-bottom: 6px;
+}
+
+.nameLink {
+  color: inherit;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+.nameLink:hover {
+  color: var(--accent);
+}
+.nameLink svg {
+  opacity: 0.5;
+  flex-shrink: 0;
+}
+
+/* ── Role ── */
+.role {
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: .08em;
+  color: var(--text-muted);
+  margin-bottom: 16px;
+  text-transform: uppercase;
+}
+
+/* ── Description ── */
+.desc {
+  font-size: 13.5px;
+  line-height: 1.75;
+  color: var(--text);
+  max-width: 520px;
+}

@@ -1,9 +1,7 @@
 import styles from './Projects.module.css'
 import { useIntersection } from '../hooks/useIntersection'
 import imgDaimon from '../pics/daimon.png'
-import imgRasync from '../pics/rasync.png'
 import imgCozy from '../pics/cozyarchives.png'
-import imgEcho from '../pics/echoboard.png'
 
 const PROJECTS = [
   {
@@ -15,28 +13,12 @@ const PROJECTS = [
     flip: false,
   },
   {
-    name: 'RAsync',
-    summary: 'A full-stack housing management platform for students, RAs, and admins. Handles announcements, incidents, roommate agreements, anonymous feedback, calendars, and direct messaging — all role-aware so each user sees exactly what they need. Built to replace the chaos of group chats and email threads in campus housing.',
-    stack: ['React', 'Supabase', 'Role-Based Access', 'Full Stack'],
-    link: 'https://dormsync.vercel.app/',
-    img: imgRasync,
-    flip: true,
-  },
-  {
     name: 'Cozy Archives',
     summary: 'A journaling app built around an infinite canvas where notes and memories live as draggable nodes in a visual tree. Encrypted entries, habit streaks, and animated depth layers — exploring your history feels like navigating a map, not scrolling a list.',
     stack: ['React', 'Supabase', 'Interactive Canvas', 'Encrypted Journaling'],
     link: 'https://cozy-archive.vercel.app/',
     img: imgCozy,
     flip: false,
-  },
-  {
-    name: 'EchoBoard',
-    summary: 'An AI survey platform that turns open-ended responses into charts and insights on demand. Ask it "summarize themes" or "show standout responses" and it builds the visualization for you. No manual analysis.',
-    stack: ['React', 'Node.js', 'OpenAI API', 'Data Visualization'],
-    link: null,
-    img: imgEcho,
-    flip: true,
   },
 ]
 

@@ -3,13 +3,6 @@ import { useIntersection } from '../hooks/useIntersection'
 
 const JOBS = [
   {
-    company: 'ETE',
-    role: 'Co-Founder & CTO',
-    date: 'Aug 2025 — Present',
-    desc: 'Co-founded a remote will-signing platform built on React, Supabase, and OpenSign. Engineered a live video co-signing flow where clients, witnesses, and lawyers execute documents in real time. Owned backend security, session integrity, and auth end to end while spending equal time pitching estate attorneys to validate the idea in the field.',
-    link: 'https://etelegal.netlify.app',
-  },
-  {
     company: 'Southern Swing Golf',
     role: 'Software Engineer',
     date: 'Aug 2025 — Dec 2025',
@@ -26,12 +19,6 @@ const JOBS = [
     role: 'Software Engineering Intern',
     date: 'Jun 2024 — Aug 2024',
     desc: 'Built a feature flag system in React and GraphQL for safe enterprise rollouts, plus RPA and AI-powered automation tools that replaced manual workflows for real clients. Got a close look at how large organizations adopt software and how much friction good tooling can remove.',
-  },
-  {
-    company: 'DataTorch',
-    role: 'Software Engineering Intern',
-    date: 'Jul 2023 — Apr 2024',
-    desc: 'Migrated core frontend components from Vue to React and optimized GraphQL query patterns to reduce over-fetching across a platform serving thousands of users. Learned what scalable actually means when you\'re responsible for keeping things fast as the data grows.',
   },
   {
     company: 'The Robot Collective',
