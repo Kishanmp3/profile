@@ -20,6 +20,14 @@ const PROJECTS = [
     img: imgCozy,
     flip: false,
   },
+  {
+    name: 'Glyph',
+    summary: 'An AI chatbot that lives on your desktop. Talk to it with your voice, chat by text, and run commands through a built-in terminal — all in one native window without switching apps or opening a browser.',
+    stack: ['Electron', 'React', 'Claude API', 'Voice', 'Terminal'],
+    link: '',
+    img: null,
+    flip: false,
+  },
 ]
 
 function FilmFrame() {
